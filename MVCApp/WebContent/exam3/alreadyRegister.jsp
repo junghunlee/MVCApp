@@ -6,8 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>가입 완료</h1>
-가입을 축하합니다.<br/>
-<a href="/MVCApp/reg.action?command=MAIN">메인페이지로</a>
+<h1>이미 가입 되었습니다.</h1>
 </body>
 </html>

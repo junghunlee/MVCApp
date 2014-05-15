@@ -15,9 +15,11 @@
 		<th>도서 제목</th><th>작가</th><th>가격</th><th>수량</th>
 	</tr>
 	<%
+	int result=0;
 	Vector bookList = (Vector)session.getAttribute("cart");
 	for(int i=0;i<bookList.size();i++){
 		BookDto dto = (BookDto)bookList.get(i);
+		result += dto.getPrice() *dto.getQuantity();
 	%>
 	<tr>
 			
@@ -31,6 +33,6 @@
 			%>
 </table>
 <hr />
-<b>전체 구입 액수 : </b>
+<b>전체 구입 액수 : <%=result %></b>
 </body>
 </html>
